@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0; font-family: "Rockwell", sans-serif; font-size: 24px;
+}
+#app, main, .weathers, .weather-wrapper {
+  display: flex; align-items: center;
+}
+#app {
+  width: 90%; max-width: 1400px; height: 100vh; margin: 0px auto;
+  display: flex; flex-direction: column;
+}
+header {
+  height: 10vh; margin: 40px 0px; font-size: 32px;
+}
+header>h2 {
+  margin: 0px;
+}
+main {
+  flex-direction: column; height: 100%; width: 100%;
+}
+label {
+  margin: 20px 0px;
+}
+label>input {
+  width: 100%; height: 30px; border-radius: 12px; border: 1px solid #ddd; outline: none;
+  padding-left: 13px; font-size: 16px;
+}
+.weathers {
+  flex: 2; align-items: flex-start; flex-wrap: wrap;
+}
+.weather-wrapper {
+  flex-direction: column; justify-content: center;
+  width: 200px; height: 300px;
+  font-size: 20px;
+}
+.weather-wrapper>div {
+  flex: 1; line-height: 60px;
+}
+.icon {
+  width: 100%; height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
